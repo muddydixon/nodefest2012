@@ -1,0 +1,118 @@
+/* @font-face { */
+/*   font-family: 'Yanone Kaffeesatz'; */
+/*   font-style: normal; */
+/*   font-weight: 700; */
+/*   src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRUgbSk09ekaEjkXjfj0Ujx8.ttf) format('truetype'); */
+/* } */
+/* @font-face { */
+/*   font-family: 'Yanone Kaffeesatz'; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLbvy90DtE_Pg_qiF9bHvTzw.ttf) format('truetype'); */
+/* } */
+/* @font-face { */
+/*     font-family: mplus-1p-regular; */
+/*     src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-light.ttf) format('truetype'); */
+/* } */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Yanone Kaffeesatz Bold"), local("YanoneKaffeesatz-Bold"), url(../lib/We_iSDqttE3etzfdfhuPRUgbSk09ekaEjkXjfj0Ujx8.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(../lib/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLbvy90DtE_Pg_qiF9bHvTzw.ttf) format("truetype"); }
+
+@font-face {
+  font-family: mplus-1p-regular;
+  src: url(../lib/mplus-1p-light.ttf) format("truetype"); }
+
+div.presentation.prepared .slide {
+  position: relative;
+  margin-top: -12px;
+  display: none;
+  height: 80%;
+  width: 90%;
+  margin: 3% auto;
+  padding: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #FFF;
+  background: #2D2D2D;
+  font: 36px "Helvetica Neue";
+  font-family: "Yanone Kaffeesatz", "mplus-1p-regular";
+  text-rendering: optimizeLegibility; }
+  div.presentation.prepared .slide a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: dotted 1px #969696; }
+  div.presentation.prepared .slide.current {
+    display: block; }
+  div.presentation.prepared .slide h1, div.presentation.prepared .slide h2 {
+    font-size: 80pt;
+    padding: 0;
+    margin: 0; }
+    div.presentation.prepared .slide h1.double, div.presentation.prepared .slide h2.double {
+      margin-top: 120px; }
+  div.presentation.prepared .slide h1 {
+    font-size: 120pt; }
+  div.presentation.prepared .slide p {
+    padding: 0;
+    margin: 0;
+    font-size: 40pt; }
+  div.presentation.prepared .slide footer {
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    text-align: right; }
+    div.presentation.prepared .slide footer span {
+      font-size: 5px; }
+div.presentation.prepared.current {
+  display: block; }
+div.presentation.prepared pre, div.presentation.prepared code {
+  font-family: "Menlo", monospace; }
+div.presentation.prepared pre {
+  color: #333;
+  padding: 10px;
+  background: #DDD;
+  box-shadow: inset 3px 3px 3px #AAA, 0 0 3px #666;
+  border-radius: 10px;
+  font-size: 40px; }
+div.presentation.prepared .purple,
+div.presentation.prepared .html .value,
+div.presentation.prepared .javascript .string,
+div.presentation.prepared .javascript .regexp {
+  color: #9e9ac8; }
+div.presentation.prepared .blue,
+div.presentation.prepared .html .tag,
+div.presentation.prepared .css .tag,
+div.presentation.prepared .javascript .keyword {
+  color: #6baed6; }
+div.presentation.prepared .red,
+div.presentation.prepared .comment {
+  color: #FC7676; }
+div.presentation.prepared .grey,
+div.presentation.prepared .comment {
+  color: #969696; }
+div.presentation.prepared .green,
+div.presentation.prepared .html .doctype,
+div.presentation.prepared .javascript .number {
+  color: #74c476; }
+div.presentation.prepared .orange,
+div.presentation.prepared .html .attribute,
+div.presentation.prepared .css .attribute,
+div.presentation.prepared .javascript .class,
+div.presentation.prepared .javascript .special {
+  color: #fd8d3c; }
+div.presentation.prepared .highlight {
+  background: #636363; }
+div.presentation.prepared .pink {
+  color: #e377c2; }
+div.presentation.prepared .white {
+  color: #fff; }
+div.presentation.prepared .black {
+  color: #333; }
