@@ -13,48 +13,80 @@
       
       <article class="hentry entry date- autopagerize_page_element chars-200 words-100 hatena" id="entry-12704830469095681335" data-uuid="12704830469095681335">
         <div class="entry-inner">
-          <header class="entry-header">
-            <div class="date ">
-              <a href="/entries/2012/11/15" rel="nofollow">
-                <time pubdate="" datetime="2012-11-15T13:29:01Z" title="2012-11-15T13:29:01Z">
-                  <span class="date-year">2012</span><span class="hyphen">-</span><span class="date-month">11</span><span class="hyphen">-</span><span class="date-day">15</span>
-                </time>
-              </a>
-            </div>
-            <h1 class="entry-title">
-              <a href="/entry/2012/11/15/222901" class="entry-title-link bookmark">テスト</a>
-            </h1>
-            
-            <div class="categories ">
-              
-              <a href="/category/nodejs">nodejs</a>
-              
-            </div>
-            <div class="entry-header-menu" style=""><a href="javascript:void">編集</a></div></header>
           <div class="entry-content">
             <p></p><div class="presentation">
               <div class="slide">
                 <h2><span class="orange">Server-side</span> で作る<br><span class="blue">Visualization</span></h2>
                 <br><br>
-                <p>森藤 大地 ( <a href="http://twitter.com/muddydixon">@muddydixon</a> ) / ニフティ株式会社</p>
+                <p><a href="http://twitter.com/muddydixon">@muddydixon</a> / NIFTY Corporation</p>
                 <p>東京Node学園祭2012 LTセッション</p>
               </div>
               
+              <div class="slide">
+                <h2 class="blue">@muddydixon <img style="-webkit-background-clip: padding-box; border-radius: 10%;" width=100 src="./images/muddydixon.jpeg" /></h2>
+                <p>
+                  <ul>
+                    <li>NIFTY Corporation</li>
+                    <li>Web Engineer</li>
+                  </ul>
+                  <pre><code class="javascript">{
+    "interest": [
+      "JavaScript",    "HTML"
+    , "hadoop",        "Data Mining"
+    , "visualization"
+  ]
+}</code></pre>
+                </p>
+              </div>
+              <div class="slide">
+                <h2>Do you know <span class="blue">D3.js</span> ?</h2>
+              </div>
+
+              <div class="slide">
+                <h2 class="double">The <span class="blue">Coolest</span> JavaScript library for <br><span class="green">Data representation</span></h2>
+              </div>
+
+              <div class="slide">
+                <p class="center">
+                  <img class="clip" src="./images/coolest.jpg" />
+                </p>
+              </div>
+              
+              <div class="slide">
+                <h1 class="double red">Problem</h1>
+              </div>
+              
+              <div class="slide">
+                <h2 class="double"><span class="blue">D3.js</span> does not support <br><span class="red">non</span> modern browser</h2>
+              </div>
+              
+              <div class="slide">
+                <p class="center">
+                  <img class="clip" src="./images/ie-logo-history.png"><div class="dismiss">x</div></img>
+                </p>
+              </div>
+
               <div class="slide">
                 <h1 class="double red">Goal</h1>
               </div>
               
               <div class="slide">
-                <h2>d3の対象外の<br><span class="red">非</span><span class="blue">モダンブラウザ</span>でもVisualizationを利用したい</h2>
+                <h2 class="double">Applying <span class="blue">D3.js</span> to<br><span class="red">non</span> modern browser</h2>
+              </div>
+              
+              <div class="slide">
+                <h1 class="double red">Solution</h1>
               </div>
               <div class="slide">
-                <h1 class="double red">Answer</h1>
+                <h2 class="double">Work <span class="blue">D3.js</span> on <span class="orange">Server-side</span></h2>
               </div>
               <div class="slide">
-                <h2><span class="orange">Server-side</span><br>で作って画像にして<br>送ってやるよ</h2>
+                <h2 class="double">Work <span class="blue">D3.js</span> on <span class="orange">Server-side</span><br>
+                  = <span class="green">Node.js</span> + <span class="grey">phantomjs</span>
+                </h2>
               </div>
               <div class="slide">
-                <h2>というわけで作りました<br><a class="orange" href="https://github.com/muddydixon/d3renderer">d3-renderer</a><br>です</h2>
+                <h1 class="double"><a class="orange" href="https://github.com/muddydixon/d3renderer">d3-renderer</a></h2>
               </div>
               <div class="slide">
                 <h2>INSTALL</h2>
@@ -65,53 +97,43 @@ $ npm install && npm test</code></pre>
               <div class="slide">
                 <h2>USAGE</h2>
                 <pre><code class="javascript">require('d3renderer');
+// enable to use 'body' from d3
 var svg = d3.select('body').append('svg')
   .attr('width', 400).attr('height', 300);
+// d3 description
 svg.selectAll('circle').data([1, 3, 5, 7]).enter()
   .append('circle')
   .attr('cx', function(d){  return 10 * d; })
   .attr('cy', function(d){  return 10 * d; })
   .attr('r', function(d){  return 10 * d; });
+// write down "png image" or "base64img data"
 d3.render(function(err, base64img){ /* some */});</code></pre>
               </div>
               <div class="slide">
                 <h1 class="double red">DEMO</h1>
               </div>
+              
+              <div class="slide">
+                <h2 class="double">Thank you for your attention</h2>
+                <p>love &lt;3
+                  <ul>
+                    <li><span class="green">Node.js</span></li>
+                    <li><span class="grey">phantomjs</span></li>
+                    <li><span class="blue">D3.js</span></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="slide">
+                <h1 class="double red">One more thing!</h1>
+              </div>
+              <div class="slide">
+                <iframe width="100%" height="100%" src="http://www.cross-party.com"></iframe>
+              </div>
             </div><p></p>
 
           </div>
-          <footer class="entry-footer">
-            <p class="entry-footer-section">
-              
-              <span class="author vcard"><span class="fn"></span></span>
-              <span class="entry-footer-time"><a href="/entry/2012/11/15/222901"><time data-relative="" datetime="2012-11-15T13:29:01Z" title="2012-11-15T13:29:01Z" pubdate="" class="updated">16分前</time></a></span>
-            </p><div class="hatena-star-container">
-            </div>
-            <p></p>
-
-            <div class="comment-box">
-              <ul class="comment">
-              </ul>
-              <a class="leave-comment-title">コメントを書く</a>
-            </div>
-          </footer>
         </div>
       </article>
-      <div class="permalink pager">
-        
-        <span class="pager-prev">
-          <a href="/entry/2012/09/09/232353">前の記事</a>
-        </span>
-        
-      </div>
-      
-
-      
-      
-      <!-- google_ad_section_end -->
-
-      
-      
     </div>
     <script type="text/javascript" src="./lib/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="./lib/d3.v2.min.js"></script>
